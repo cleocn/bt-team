@@ -3,7 +3,7 @@ export class html extends base{
 	constructor(){
 		super();
 		this._event_init();
-		//this.message('欢迎[' + _config.name + ']进入协同办公');
+		//this.message('欢迎[ ' + _config.name + ' ]进入协同办公');
 	}
 	// 事件初始化
 	_event_init(){
@@ -19,8 +19,13 @@ export class html extends base{
 				default:
 					document.execCommand($(this).data('role'), false, null);
 					let nodes = $(self.getSelected().baseNode.parentElement);
-					self.log(nodes.context.className)
-					//socket._emit({author:nodes.context.className,txt : nodes.html()});
+					let className = nodes.context.className;
+					if(! className){
+						nodes = $(nodes.context.parentNode);
+						className = nodes.context.parentNode.className;
+					}
+					let rows = className.split('-');
+					socket._emit({author:rows[0] + '-' + rows[1],line : rows[2] ,txt : nodes.html()});
 					break;
 			}
 		});
@@ -30,10 +35,11 @@ export class html extends base{
 				var info = $(e.currentTarget.children[1].lastElementChild);
 				var line = ($('.content div').size() + 1);
 				info.attr('class','row-' + _config.userid + '-' + line)
-				info.attr('data-id',_config.userid);
-				info.attr('data-row',line);
+				//info.attr('data-id',_config.userid);
+				//info.attr('data-row',line);
 				socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
 			};
+			//this.log($('.context').html());
 		});
 	}
 	getSelected() {

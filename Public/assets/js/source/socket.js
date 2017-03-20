@@ -22,7 +22,7 @@ export class socket extends base{
 					$('.content').append('<div class="'+ dom+'">'+ data.txt +'</div>');
 				}
 			}
-			this.log(data);
+			//this.log(data);
 		}.bind(this))
 	}
 	// 发送消息

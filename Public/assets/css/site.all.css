@@ -22,6 +22,6 @@ div.html,div.editor{width:820px;margin:auto;height: 100%;}
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.html .editor input[type="text"]{border:0;font-size: 40px;font-weight: bold;width:100%;height:50px;color:#000;border-radius: 0;outline: none;box-shadow: none;border-bottom:1px solid #e8ecf1;;padding-bottom: 15px;}
+.html .editor input[type="text"]{border:0;font-size: 30px;font-weight: bold;width:100%;height:50px;line-height:50px;color:#000;border-radius: 0;outline: none;box-shadow: none;border-bottom:1px solid #e8ecf1;;padding-bottom: 15px;}
 .html .editor .content{outline: none;box-shadow: none;}
 div.layer{position: absolute;right: 0px;top:400px;}
