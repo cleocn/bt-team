@@ -36,12 +36,13 @@ gulp.task('css', function() {
 
 gulp.task('libs', function(){
     return gulp.src([
-        'node_modules/systemjs/dist/system.js',
-        'node_modules/babel-polyfill/dist/polyfill.js',
-        'public/js/backend/libs/score.highcharts.js'
+        'Public/assets/js/lib/jquery.min.js',
+        'Public/assets/js/lib/layer/layer.js',
+        'Public/assets/js/lib/socket.io.js'
         ])
         .pipe(print())
-        .pipe(gulp.dest('public/js/backend/dist/libs'));
+        .pipe(concat('lib.js'))
+        .pipe(gulp.dest('Public/build'));
 });
 
 gulp.task('build', ['js', 'libs'], function(){

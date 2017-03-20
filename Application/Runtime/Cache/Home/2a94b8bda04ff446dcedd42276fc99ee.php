@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<link type="text/css" href="/htmledit/Public/build/min.css" rel="stylesheet" >
-		<script src="/htmledit/Public/assets/js/lib/jquery.min.js"></script>
-		<script src="Public/assets/js/lib/require.js" data-main="Public/build/html"></script>
+		<script src="/htmledit/Public/build/lib.js"></script>
+		<script src="/htmledit/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
 		<script type="text/javascript">
-			var _config = {userid : <?php echo ($data["id"]); ?>}
+			var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'};
 		</script>
 	</head>
 	<body>

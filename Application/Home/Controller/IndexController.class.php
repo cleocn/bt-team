@@ -8,7 +8,9 @@ class IndexController extends Controller\_Controller {
         layout(true);
     }
     public function index($id){
+    	$array = array(1=>'张三',2=>'李四');
     	$this->data['id'] = $id;
+    	$this->data['name'] = $array[$id];
         $this->assign('data',$this->data);
         $this->display();
     }
