@@ -1,0 +1,27 @@
+html,body{margin:0;padding:0;background: #f0f0f0;height:100%;font-family: "微软雅黑"}
+header{height:50px;background: #fff;width:100%;box-shadow:2px 2px 5px #ccc;}
+
+div.html,div.editor{width:820px;margin:auto;height: 100%;}
+.html .Controls{margin:auto;width:820px;}
+.html .Controls a.btn{
+	background: none;
+	border:none;
+	border-radius: none;
+	text-shadow:none;
+	box-shadow:none;}
+.html .editor{
+	width:820px;
+	margin:auto;
+	background: #fff;
+	height:100%;
+	padding:50px;
+	box-shadow:0 1px 6px #ccc;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.html .editor input[type="text"]{border:0;font-size: 40px;font-weight: bold;width:100%;height:50px;color:#000;border-radius: 0;outline: none;box-shadow: none;border-bottom:1px solid #e8ecf1;;padding-bottom: 15px;}
+.html .editor .content{outline: none;box-shadow: none;}
+div.layer{position: absolute;right: 0px;top:400px;}
