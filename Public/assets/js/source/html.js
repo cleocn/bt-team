@@ -35,6 +35,7 @@ export class html extends base{
 				var info = $(e.currentTarget.children[1].lastElementChild);
 				var line = ($('.content div').size() + 1);
 				info.attr('class','row-' + _config.userid + '-' + line)
+				info.addClass('row-' + _config.userid);
 				//info.attr('data-id',_config.userid);
 				//info.attr('data-row',line);
 				socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});

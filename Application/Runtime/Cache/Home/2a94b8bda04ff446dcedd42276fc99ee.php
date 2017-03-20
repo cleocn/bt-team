@@ -1,16 +1,20 @@
 <?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link type="text/css" href="/htmleditor/Public/build/min.css" rel="stylesheet" >
-		<script src="/htmleditor/Public/build/lib.js"></script>
-		<script src="/htmleditor/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
-		<script type="text/javascript">
-			var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'};
-		</script>
-	</head>
-	<body>
-		<header></header>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" href="/htmleditor/Public/build/min.css" rel="stylesheet" >
+	<script src="/htmleditor/Public/build/lib.js"></script>
+	<script src="/htmleditor/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
+	<script type="text/javascript">
+		var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'};
+	</script>
+	<style type="text/css">
+	div.row-2{border-left:3px solid #6699FF;padding-left:5px;}
+	div.row-1{border-left:3px solid #FF66CC;padding-left:5px;}
+</style>
+</head>
+<body>
+<header></header>
 <div class="html">
 	<!-- 控制 -->
 	<div class='Controls' class='span9' style=' padding:5px;'>
@@ -49,15 +53,14 @@
 		</div>
 	</div>
 	<!-- 正文 -->
-	<div class='editor' class='span9' style=''>
+	<div class='editor'>
 		<input type="text" placeholder="无标题">
 		<div class="content" contenteditable="true">
-			<div class="row-<?php echo ($data["id"]); ?>-1">从这里开始</div>
+			<div class="row-<?php echo ($data["id"]); ?>-1 row-<?php echo ($data["id"]); ?> ">从这里开始</div>
 		</div>
 	</div>
 </div>
-<div class="layer">
-	<button class="t1">TS</button>
-</div>
- 	</body>
+ 	<footer></footer>
+	<footer>&copy BT出口</footer>
+	</body>
 </html>

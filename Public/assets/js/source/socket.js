@@ -17,12 +17,13 @@ export class socket extends base{
 			if(data.author != 'row-' + _config.userid){
 				if($('.content div').hasClass(dom)){
 					let info = $('.content div.' + dom);
+					info.addClass(data.author);
 					info.html(data.txt);
 				}else{
-					$('.content').append('<div class="'+ dom+'">'+ data.txt +'</div>');
+					$('.content').append('<div class="'+ dom+' '+ data.author+'">'+ data.txt +'</div>');
 				}
 			}
-			//this.log(data);
+			this.log(data);
 		}.bind(this))
 	}
 	// 发送消息
