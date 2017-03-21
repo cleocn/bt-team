@@ -27,11 +27,6 @@ export class socket extends base{
 			//this.log(data);
 		}.bind(this))
 	}
-	_remove_listen_bind(){
-		node.removeEventListener("DOMNodeInserted", function () {
-		    this.log('remove');
-		}, false);
-	}
 	// 发送消息
 	_emit(info){
 		this._socket.emit('c_emit',info);

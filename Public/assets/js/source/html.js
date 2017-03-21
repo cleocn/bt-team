@@ -79,6 +79,7 @@ export class html extends base{
 		}
 
 		$('#edit-box').html('<div>Start</div>');
+		$('#edit-box div').focus();
 	}
 	getSelected() {
 		if (window.getSelection) {
