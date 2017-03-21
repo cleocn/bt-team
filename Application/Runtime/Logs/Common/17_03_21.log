@@ -1,0 +1,330 @@
+[ 2017-03-21T14:07:37+08:00 ] 192.168.2.157 /htmledit/Public/assets/js/lib/rangy-classapplier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-21T14:07:38+08:00 ] 192.168.2.157 /htmledit/Public/assets/js/lib/rangy-classapplier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-21T14:07:38+08:00 ] 192.168.2.157 /htmledit/Public/assets/js/lib/rangy-classapplier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-21T14:07:38+08:00 ] 192.168.2.157 /htmledit/Public/assets/js/lib/rangy-classapplier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-21T14:07:39+08:00 ] 192.168.2.157 /htmledit/Public/assets/js/lib/rangy-classapplier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-21T14:07:39+08:00 ] 192.168.2.157 /htmledit/Public/assets/js/lib/rangy-classapplier
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/testify.js/Testify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:01+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/testify.js/Testify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/testify.js/Testify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/testify.js/Testify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:03+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/testify.js/Testify.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/vue/dist/vue.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-core.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/rangy-official/rangy-classapplier.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+
+[ 2017-03-21T14:15:04+08:00 ] 192.168.2.157 /htmledit/test/bower_components/undo/undo.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Test
+

@@ -30,18 +30,105 @@ export class html extends base{
 			}
 		});
 		// 行内输入class绑定
-		$('div').on('keyup','div',(e)=> {
-			if(e.currentTarget.childElementCount > 1){
-				var info = $(e.currentTarget.children[1].lastElementChild);
-				var line = ($('.content div').size() + 1);
-				info.attr('class','row-' + _config.userid + '-' + line)
-				info.addClass('row-' + _config.userid);
-				//info.attr('data-id',_config.userid);
-				//info.attr('data-row',line);
-				socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
-			};
-			//this.log($('.context').html());
-		});
+		function addEvent(obj, type, fn) {
+        if (obj) {
+	            if (obj.attachEvent) {
+	                obj['e' + type + fn] = fn;
+	                obj[type + fn] = function () { obj['e' + type + fn](window.event); };
+	                obj.attachEvent('on' + type, obj[type + fn]);
+	            } else {
+	                obj.addEventListener(type, fn, false);
+	            }
+	        }
+	    };
+	    function log(val){
+	    	console.log(val);
+	    }
+	    var node = document.getElementById('edit-box');
+        // addEvent(node, 'copy', function (e) {
+        //     log('copy');
+        // });
+
+        // addEvent(node, 'paste', function (e) {
+        //     log('paste');
+        // });
+
+        // addEvent(node, 'cut', function (e) {
+        //     log('cut');
+        // });
+
+        // addEvent(node, 'drop', function (e) {
+        //     log('drop');
+        // });
+
+        // addEvent(node, 'focus', function (e) {
+        //     log('focus');
+        // });
+
+        // addEvent(node, 'blur', function (e) {
+        //     log('blur');
+        // });
+
+        // addEvent(node, 'keypress', function (e) {
+        //     log('keypress');
+        // });
+
+        // addEvent(node, 'input', function (e) {
+        //     log('input');
+        // });
+
+        node.addEventListener('textInput',function (e) {
+            var targetNode = getSelectionStart();
+		    if(targetNode != undefined && targetNode.nodeType === 1 && targetNode.nodeName == 'DIV'){
+		    	var line = ($('.content div').size() + 1);
+			    var nodeHtmlString = targetNode.outerHTML;
+			    var info = $(targetNode);
+			    if(info.attr('class')){
+			    	log('update - ' + info.attr('class'));
+			    }else{
+			    	log('add');
+			    	info.attr('class','row-' + _config.userid + '-' + line)
+					info.attr('key',Math.round(Math.random() * 1000000));
+					info.addClass('row-' + _config.userid);
+			    }
+			    log("OK");
+			    //log({author:'row-' + _config.userid,line : line,txt : info.html()});
+			    socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
+
+			    if(~nodeHtmlString.indexOf("nonEditable")){
+				    e.preventDefault();
+				    e.stopPropagation();
+				}
+		    }
+        },false);
+
+        node.addEventListener('DOMNodeInserted', function (e) {
+   //          log('DOMNodeInserted------');
+   //          let info = $(e.target);
+   //          var line = ($('.content div').size() + 1);
+   //          info.attr('class','row-' + _config.userid + '-' + line)
+			// info.attr('key',Math.round(Math.random() * 1000000));
+			// info.addClass('row-' + _config.userid);
+			//socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
+        }, false);
+
+		function getSelectionStart() {
+		 var node = document.getSelection().anchorNode;
+		 return (node.nodeType == 3 ? node.parentNode : node);
+		}
+
+		// $('div').on('keyup','div',(e)=> {
+		// 	if(e.currentTarget.childElementCount > 1 && e.currentTarget.className == 'content'){
+		// 		log(e);
+		// 		var info = $(e.currentTarget.children[1].lastElementChild);
+		// 		var line = ($('.content div').size() + 1);
+		// 		info.attr('class','row-' + _config.userid + '-' + line)
+		// 		info.attr('key',Math.round(Math.random() * 1000000));
+		// 		info.addClass('row-' + _config.userid);
+		// 		socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
+		// 	};
+		// 	e.stopPropagation();
+		// });
 	}
 	getSelected() {
 		if (window.getSelection) {

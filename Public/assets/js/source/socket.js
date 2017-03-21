@@ -13,6 +13,7 @@ export class socket extends base{
 	// 事件侦听
 	_listen_bind(){
 		this._socket.on('s_listen',function(data){
+			this.log(data);
 			let dom = data.author + '-' + data.line;
 			if(data.author != 'row-' + _config.userid){
 				if($('.content div').hasClass(dom)){
@@ -23,7 +24,7 @@ export class socket extends base{
 					$('.content').append('<div class="'+ dom+' '+ data.author+'">'+ data.txt +'</div>');
 				}
 			}
-			this.log(data);
+			//this.log(data);
 		}.bind(this))
 	}
 	// 发送消息
