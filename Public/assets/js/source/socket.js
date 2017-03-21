@@ -8,7 +8,6 @@ export class socket extends base{
 	// 初始化
 	_init(){
 		this._socket = io.connect('http://120.26.239.60:3003');
-		this.log("socket init");
 	}
 	// 事件侦听
 	_listen_bind(){
@@ -19,10 +18,12 @@ export class socket extends base{
 					let info = $('.content div[key='+ data.key+']');
 					info.addClass(data.author);
 					info.html(data.txt);
+					_is_back = false;
 				}else{
 					_is_back = true;
 					$('.content').append('<div class="'+ dom+' '+ data.author+'" key="'+ data.key +'">'+ data.txt +'</div>');
 				}
+				//$('.content div:last').input();
 			}
 			//this.log(data);
 		}.bind(this))

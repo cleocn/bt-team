@@ -25,22 +25,22 @@ export class html extends base{
 						className = nodes.context.parentNode.className;
 					}
 					let rows = className.split('-');
-					socket._emit({author:rows[0] + '-' + rows[1],line : rows[2] ,txt : nodes.html()});
+					socket._emit({author:rows[0] + '-' + rows[1],line : rows[2] ,txt : nodes.html() ,key : nodes.attr('key')});
 					break;
 			}
 		});
 		// 行内输入class绑定
-		function addEvent(obj, type, fn) {
-        if (obj) {
-	            if (obj.attachEvent) {
-	                obj['e' + type + fn] = fn;
-	                obj[type + fn] = function () { obj['e' + type + fn](window.event); };
-	                obj.attachEvent('on' + type, obj[type + fn]);
-	            } else {
-	                obj.addEventListener(type, fn, false);
-	            }
-	        }
-	    };
+		// function addEvent(obj, type, fn) {
+  //       if (obj) {
+	 //            if (obj.attachEvent) {
+	 //                obj['e' + type + fn] = fn;
+	 //                obj[type + fn] = function () { obj['e' + type + fn](window.event); };
+	 //                obj.attachEvent('on' + type, obj[type + fn]);
+	 //            } else {
+	 //                obj.addEventListener(type, fn, false);
+	 //            }
+	 //        }
+	 //    };
 	    function log(val){
 	    	console.log(val);
 	    }
@@ -54,6 +54,8 @@ export class html extends base{
         // });
 
         node.addEventListener('input',function (e) {
+        	//log('input');
+        	_is_back = false;
             var targetNode = getSelectionStart();
 		    if(targetNode != undefined && targetNode.nodeType === 1 && targetNode.nodeName == 'DIV'){
 		    	_is_back = false;
@@ -63,8 +65,10 @@ export class html extends base{
 		    }
         },false);
         node.addEventListener('DOMNodeInserted', function (e) {
+        	//log(e);
+        	//log('DOMNodeInserted---');
         	if(! _is_back){
-        		log('DOMNodeInserted');
+        		//log('DOMNodeInserted');
 	         	let info = $(e.target);
 	            let line = $('#edit-box div').size() + 1;
 	            let key = Math.round(Math.random() * 1000000);

@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link type="text/css" href="/htmledit/Public/build/min.css" rel="stylesheet" >
-	<script src="/htmledit/Public/build/lib.js"></script>
-	<script src="/htmledit/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
+	<link type="text/css" href="/htmleditor/Public/build/min.css" rel="stylesheet" >
+	<script src="/htmleditor/Public/build/lib.js"></script>
+	<script src="/htmleditor/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
 	<script type="text/javascript">
 		var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'},
 			_is_back = false,
