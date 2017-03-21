@@ -13,19 +13,24 @@ export class socket extends base{
 	// 事件侦听
 	_listen_bind(){
 		this._socket.on('s_listen',function(data){
-			this.log(data);
 			let dom = data.author + '-' + data.line;
 			if(data.author != 'row-' + _config.userid){
-				if($('.content div').hasClass(dom)){
-					let info = $('.content div.' + dom);
+				if($('.content div[key='+ data.key+']').length > 0){
+					let info = $('.content div[key='+ data.key+']');
 					info.addClass(data.author);
 					info.html(data.txt);
 				}else{
-					$('.content').append('<div class="'+ dom+' '+ data.author+'">'+ data.txt +'</div>');
+					_is_back = true;
+					$('.content').append('<div class="'+ dom+' '+ data.author+'" key="'+ data.key +'">'+ data.txt +'</div>');
 				}
 			}
 			//this.log(data);
 		}.bind(this))
+	}
+	_remove_listen_bind(){
+		node.removeEventListener("DOMNodeInserted", function () {
+		    this.log('remove');
+		}, false);
 	}
 	// 发送消息
 	_emit(info){

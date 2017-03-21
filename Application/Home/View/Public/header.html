@@ -6,7 +6,9 @@
 	<script src="__PUBLIC__/build/lib.js"></script>
 	<script src="__PUBLIC__/assets/js/lib/require.js" data-main="Public/build/app"></script>
 	<script type="text/javascript">
-		var _config = {userid : {$data.id},name : '{$data.name}'};
+		var _config = {userid : {$data.id},name : '{$data.name}'},
+			_is_back = false,
+			node = null;
 	</script>
 	<style type="text/css">
 	div.row-2{border-left:3px solid #6699FF;padding-left:5px;}

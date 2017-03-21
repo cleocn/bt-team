@@ -6,7 +6,9 @@
 	<script src="/htmledit/Public/build/lib.js"></script>
 	<script src="/htmledit/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
 	<script type="text/javascript">
-		var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'};
+		var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'},
+			_is_back = false,
+			node = null;
 	</script>
 	<style type="text/css">
 	div.row-2{border-left:3px solid #6699FF;padding-left:5px;}
@@ -56,10 +58,13 @@
 	<div class='editor'>
 		<input type="text" placeholder="无标题">
 		<div class="content" contenteditable="true" id="edit-box">
-			<div>&nbsp;</div>
+			
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	node = document.getElementById('edit-box');
+</script>
  	<footer></footer>
 	<footer>&copy BT出口</footer>
 	</body>

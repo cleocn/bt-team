@@ -44,30 +44,6 @@ export class html extends base{
 	    function log(val){
 	    	console.log(val);
 	    }
-	    var node = document.getElementById('edit-box');
-        // addEvent(node, 'copy', function (e) {
-        //     log('copy');
-        // });
-
-        // addEvent(node, 'paste', function (e) {
-        //     log('paste');
-        // });
-
-        // addEvent(node, 'cut', function (e) {
-        //     log('cut');
-        // });
-
-        // addEvent(node, 'drop', function (e) {
-        //     log('drop');
-        // });
-
-        // addEvent(node, 'focus', function (e) {
-        //     log('focus');
-        // });
-
-        // addEvent(node, 'blur', function (e) {
-        //     log('blur');
-        // });
 
         // addEvent(node, 'keypress', function (e) {
         //     log('keypress');
@@ -77,39 +53,24 @@ export class html extends base{
         //     log('input');
         // });
 
-        node.addEventListener('textInput',function (e) {
+        node.addEventListener('input',function (e) {
             var targetNode = getSelectionStart();
 		    if(targetNode != undefined && targetNode.nodeType === 1 && targetNode.nodeName == 'DIV'){
-		    	var line = ($('.content div').size() + 1);
-			    var nodeHtmlString = targetNode.outerHTML;
+		    	_is_back = false;
+		     	var line = $('#edit-box div').size() + 1;
 			    var info = $(targetNode);
-			    if(info.attr('class')){
-			    	log('update - ' + info.attr('class'));
-			    }else{
-			    	log('add');
-			    	info.attr('class','row-' + _config.userid + '-' + line)
-					info.attr('key',Math.round(Math.random() * 1000000));
-					info.addClass('row-' + _config.userid);
-			    }
-			    log("OK");
-			    //log({author:'row-' + _config.userid,line : line,txt : info.html()});
-			    socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
-
-			    if(~nodeHtmlString.indexOf("nonEditable")){
-				    e.preventDefault();
-				    e.stopPropagation();
-				}
+			    socket._emit({author:'row-' + _config.userid,line : line,txt : info.html() , key : info.attr('key')});
 		    }
         },false);
-
         node.addEventListener('DOMNodeInserted', function (e) {
-   //          log('DOMNodeInserted------');
-   //          let info = $(e.target);
-   //          var line = ($('.content div').size() + 1);
-   //          info.attr('class','row-' + _config.userid + '-' + line)
-			// info.attr('key',Math.round(Math.random() * 1000000));
-			// info.addClass('row-' + _config.userid);
-			//socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
+        	if(! _is_back){
+        		log('DOMNodeInserted');
+	         	let info = $(e.target);
+	            let line = $('#edit-box div').size() + 1;
+	            let key = Math.round(Math.random() * 1000000);
+	            info.attr('class','row-' + _config.userid + '-' + line).attr('key',key).addClass('row-' + _config.userid);
+				//socket._emit({author:'row-' + _config.userid,line : line,txt : info.html() ,key : key});
+        	}
         }, false);
 
 		function getSelectionStart() {
@@ -117,18 +78,7 @@ export class html extends base{
 		 return (node.nodeType == 3 ? node.parentNode : node);
 		}
 
-		// $('div').on('keyup','div',(e)=> {
-		// 	if(e.currentTarget.childElementCount > 1 && e.currentTarget.className == 'content'){
-		// 		log(e);
-		// 		var info = $(e.currentTarget.children[1].lastElementChild);
-		// 		var line = ($('.content div').size() + 1);
-		// 		info.attr('class','row-' + _config.userid + '-' + line)
-		// 		info.attr('key',Math.round(Math.random() * 1000000));
-		// 		info.addClass('row-' + _config.userid);
-		// 		socket._emit({author:'row-' + _config.userid,line : line,txt : info.html()});
-		// 	};
-		// 	e.stopPropagation();
-		// });
+		$('#edit-box').html('<div>Start</div>');
 	}
 	getSelected() {
 		if (window.getSelection) {
