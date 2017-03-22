@@ -15,8 +15,10 @@ export class socket extends base{
 			let dom = data.author + '-' + data.line;
 			if(data.author != 'row-' + _config.userid){
 				if($('.content div[key='+ data.key+']').length > 0){
+					//log(data);
 					let info = $('.content div[key='+ data.key+']');
 					info.addClass(data.author);
+					info.attr('style',data.style);
 					info.html(data.txt);
 					_is_back = false;
 				}else{

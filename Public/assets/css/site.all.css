@@ -1,9 +1,9 @@
 html,body{margin:0;padding:0;background: #f0f0f0;height:100%;font-family: "微软雅黑"}
 header{height:50px;background: #fff;width:100%;box-shadow:2px 2px 5px #ccc;}
-footer{height:40px;line-height:40px;width:100%;margin:auto;text-align: center;display: block;}
+footer{height:40px;line-height:40px;width:100%;margin:auto;text-align: center;display: block;background: #f0f0f0;}
 
-div.html,div.editor{width:820px;margin:auto;height: 100%;}
-.html .Controls{margin:auto;width:820px;}
+div.html,div.editor{width:900px;margin:auto;height: 100%;}
+.html .Controls{margin:auto;width:900px;}
 .html .Controls a.btn{
 	background: none;
 	border:none;
@@ -11,7 +11,7 @@ div.html,div.editor{width:820px;margin:auto;height: 100%;}
 	text-shadow:none;
 	box-shadow:none;}
 .html .editor{
-	width:820px;
+	width:900px;
 	margin:auto;
 	background: #fff;
 	height:100%;
@@ -23,5 +23,50 @@ div.html,div.editor{width:820px;margin:auto;height: 100%;}
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.html .editor input[type="text"]{border:0;font-size: 30px;font-weight: bold;width:100%;height:50px;line-height:50px;color:#000;border-radius: 0;outline: none;box-shadow: none;border-bottom:1px solid #e8ecf1;;padding-bottom: 15px;}
+.html .editor input[type="text"]{border:0;font-size: 30px;font-weight: bold;width:100%;height:50px;line-height:50px;color:#3e3e3e;border-radius: 0;outline: none;box-shadow: none;border-bottom:1px solid #e8ecf1;;padding-bottom: 15px;}
 .html .editor .content{outline: none;box-shadow: none;}
+	div.row-2{border-left:3px solid #6699FF;padding-left:5px;}
+	div.row-1{border-left:3px solid #FF66CC;padding-left:5px;}
+
+
+/*login*/
+
+	.layer_login{width:300px;height:350px;padding:40px;moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		background: #fff;
+		border-radius: 0px;
+	}
+	.layer_login .layui-layer-content header{
+		font-size:40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		box-shadow:none;
+	}
+	.layer_login .layui-layer-content section{
+		margin-top:20px;
+		border-top:1px solid #ccc;
+		height:220px;
+		line-height: 220px;
+		text-align: center;
+	}
+	.layer_login .layui-layer-content section button{
+    	background-color: #41464b;
+    	border: none;
+	    -webkit-transition: 0.2s;
+	    -moz-transition: 0.2s;
+	    transition: 0.2s;
+	    height: 44px;
+	    line-height: 44px;
+	    text-align: center;
+	    width: calc(100% - 2px);
+	    border: 1px solid #41464b;
+	    color: #fff;
+	    border-radius: 2px;
+	    cursor: pointer;
+	    position: relative;
+	}
+	.layer_login .layui-layer-content section button a{position: absolute;top:0;left:0;width:100%;opacity:0;filter:alpha(opacity=0);-moz-opacity:0; }

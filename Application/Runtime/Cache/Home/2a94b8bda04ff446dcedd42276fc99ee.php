@@ -2,21 +2,55 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link type="text/css" href="/htmleditor/Public/build/min.css" rel="stylesheet" >
-	<script src="/htmleditor/Public/build/lib.js"></script>
-	<script src="/htmleditor/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
+	<script src="/htmledit/Public/build/lib.js"></script>
+	<script src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101139503" data-redirecturi="http://im.5i5s.net" charset="utf-8"></script>
+	<script type="text/javascript" src="/htmledit/Public/assets/js/lib/bootstrap.min.js"></script>
+	<link type="text/css" href="/htmledit/Public/build/min.css" rel="stylesheet" >
 	<script type="text/javascript">
-		var _config = {userid : <?php echo ($data["id"]); ?>,name : '<?php echo ($data["name"]); ?>'},
+		var _config = {userinfo : null,CONTROLLER_NAME : 'Home/<?php echo CONTROLLER_NAME;?>'},
 			_is_back = false,
 			node = null;
+		function log(val){
+			console.log(val);
+		}
 	</script>
 	<style type="text/css">
-	div.row-2{border-left:3px solid #6699FF;padding-left:5px;}
-	div.row-1{border-left:3px solid #FF66CC;padding-left:5px;}
-</style>
+		.navbar{width:100%;border-radius:0;margin:0;border:0;}
+		.menu{margin:auto;width:100%;}
+		.navbar-default{background: none;}
+		.user img{width:30px;height: 30px;border-radius: 20px;margin-right:5px;}
+	</style>
 </head>
 <body>
-<header></header>
+<header>
+	<div class="menu">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid"> 
+		    <div class="navbar-header">
+		        <a class="navbar-brand" href="#">BT 文档</a>
+		    </div>
+		    <div>
+		        <!--向右对齐-->
+		        <ul class="nav navbar-nav navbar-right">
+		            <li class="dropdown">
+		                <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><img src="">...</a>
+		                <ul class="dropdown-menu">
+		                    <li><a href="#">jmeter</a></li>
+		                    <li><a href="#">EJB</a></li>
+		                    <li><a href="#">Jasper Report</a></li>
+		                    <li class="divider"></li>
+		                    <li><a href="#">分离的链接</a></li>
+		                    <li class="divider"></li>
+		                    <li><a href="#">另一个分离的链接</a></li>
+		                </ul>
+		            </li>
+		        </ul>
+		    </div>
+			</div>
+		</nav>
+	</div>
+</header>
+
 <div class="html">
 	<!-- 控制 -->
 	<div class='Controls' class='span9' style=' padding:5px;'>
@@ -56,7 +90,7 @@
 	</div>
 	<!-- 正文 -->
 	<div class='editor'>
-		<input type="text" placeholder="无标题">
+		<input type="text" id="title" placeholder="无标题">
 		<div class="content" contenteditable="true" id="edit-box">
 			
 		</div>
@@ -65,7 +99,8 @@
 <script type="text/javascript">
 	node = document.getElementById('edit-box');
 </script>
- 	<footer></footer>
+ 	<script src="/htmledit/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
+	
 	<footer>&copy BT出口</footer>
 	</body>
 </html>
