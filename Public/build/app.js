@@ -1,4 +1,4 @@
-var config_path = "../../Public/build/",html,socket;
+var config_path = _config.path +  "Public/build/",html,socket;
 requirejs.config({
     paths: {
     	"lib": config_path + "lib",

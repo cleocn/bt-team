@@ -1,4 +1,4 @@
-import {base} from "Public/build/base.js";
+import {base} from  "/Public/build/base.js";
 export class html extends base{
 	constructor(){
 		super();
@@ -7,11 +7,18 @@ export class html extends base{
 	}
 	// 事件初始化
 	_event_init(){
+		this.event();
 		this.editor_init();
 		this.editor_node_init();
 		this.title_init();
 		this.default();
 		this.login();
+	}
+	event(){
+		$('.logout').click(()=>{
+			QC.Login.signOut();
+			location.href = _config.CONTROLLER_NAME;
+		})
 	}
 	login(){
 		var self = this;

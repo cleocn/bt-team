@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<script src="/htmledit/Public/build/lib.js"></script>
+	<script src="/Public/build/lib.js"></script>
 	<script src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101139503" data-redirecturi="http://im.5i5s.net" charset="utf-8"></script>
-	<script type="text/javascript" src="/htmledit/Public/assets/js/lib/bootstrap.min.js"></script>
-	<link type="text/css" href="/htmledit/Public/build/min.css" rel="stylesheet" >
+	<script type="text/javascript" src="/Public/assets/js/lib/bootstrap.min.js"></script>
+	<link type="text/css" href="/Public/build/min.css" rel="stylesheet" >
 	<script type="text/javascript">
-		var _config = {userinfo : null,CONTROLLER_NAME : 'Home/<?php echo CONTROLLER_NAME;?>'},
+		var _config = {userinfo : null,CONTROLLER_NAME : '/Home/<?php echo CONTROLLER_NAME;?>',path : '/'},
 			_is_back = false,
 			node = null;
 		function log(val){
@@ -35,13 +35,7 @@
 		            <li class="dropdown">
 		                <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><img src="">...</a>
 		                <ul class="dropdown-menu">
-		                    <li><a href="#">jmeter</a></li>
-		                    <li><a href="#">EJB</a></li>
-		                    <li><a href="#">Jasper Report</a></li>
-		                    <li class="divider"></li>
-		                    <li><a href="#">分离的链接</a></li>
-		                    <li class="divider"></li>
-		                    <li><a href="#">另一个分离的链接</a></li>
+		                    <li><a href="javascript:;" class="logout">退出</a></li>
 		                </ul>
 		            </li>
 		        </ul>
@@ -99,8 +93,8 @@
 <script type="text/javascript">
 	node = document.getElementById('edit-box');
 </script>
- 	<script src="/htmledit/Public/assets/js/lib/require.js" data-main="Public/build/app"></script>
-	
+ 	<script src="/Public/assets/js/lib/require.js" data-main="/Public/build/app"></script>
+	<footer></footer>
 	<footer>&copy BT出口</footer>
 	</body>
 </html>

@@ -63,7 +63,7 @@ gulp.task('serve', ['build'], function() {
 
 // 保存即更新 自动化构建
 gulp.task('watch', function(){
-    gulp.watch('Public/assets/js/source/*.js', ['build']);
+    gulp.watch('Public/assets/js/source/*.js', ['build','css']);
 });
 
 gulp.task('default', ['build']);

@@ -1,4 +1,4 @@
-import {base} from "Public/build/base.js";
+import {base} from "/Public/build/base.js";
 export class socket extends base{
 	constructor(){
 		super();
