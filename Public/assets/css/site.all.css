@@ -6,7 +6,7 @@ footer{height:40px;line-height:40px;width:100%;margin:auto;text-align: center;di
 .animate-obj{position: absolute;top: 260px;left: 370px;color:#fff;}
 .slogan{font-size: 20px;}
 .title{font-size: 40px;top: 300px;}
-.banner-content{position: absolute;top:800px;left:350px;}
+.banner-content{position: absolute;top:800px;left:365px;}
 
 div.html,div.editor{width:900px;margin:auto;height: 100%;position: relative;}
 .html .Controls{margin:auto;width:900px;}
@@ -60,7 +60,7 @@ div.html,div.editor{width:900px;margin:auto;height: 100%;position: relative;}
 		height:70px;
 		text-align: center;
 	}
-	.login{width:200px;margin:auto;position: absolute;z-index:198910149999;top:-180px; position: relative;}
+	.login{width:200px;margin:auto;position: absolute;z-index:198910149999;top:-300px; position: relative;}
 	.login button{
     	background-color: #0d71d4;
     	border: none;

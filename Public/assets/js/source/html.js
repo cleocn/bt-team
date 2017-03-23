@@ -52,7 +52,7 @@ export class html extends base{
 	}
 	default(is_login){
 		// 默认内容初始化
-		let _html = '<div>BT文档是一款支持「多人实时协作」的文档设计工具，你可以和别人一起同时进行一个文档制作，你们能够互相看到对方的状态，以及每个人的每一步操作与结果。<br></div><div>BT文档只是仿业内“石墨”的一个非常非常初级的版本，意在本人探索和偿试新产品下的技术原理实现~</div><div><br><video class="embed-responsive-item" id="fullVideo" autoplay="autoplay" controls=""><source src="https://dn-site.oss.aliyuncs.com/videos%2F60s_go_to_work.mp4?response-content-type=video/mp4" type="video/mp4"></video></div>',
+		let _html = '<div>BT文档是一款支持「多人实时协作」的文档设计工具，你可以和别人一起同时进行一个文档制作，你们能够互相看到对方的状态，以及每个人的每一步操作与结果。<br></div><div>BT文档只是仿业内“石墨”的一个非常非常初级的版本，意在本人探索和偿试新产品下的技术原理实现~</div><div><br><video loop="loop" class="embed-responsive-item" id="fullVideo" autoplay="autoplay" controls=""><source src="https://dn-site.oss.aliyuncs.com/videos%2F60s_go_to_work.mp4?response-content-type=video/mp4" type="video/mp4"></video></div>',
 			_title = 'BT-文档 多人实时协作工具';
 		if(is_login){
 			_html = '<div>Hello World</div>';
