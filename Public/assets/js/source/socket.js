@@ -14,7 +14,7 @@ export class socket extends base{
 		var self = this;
 		this._socket.on('s_listen',function(data){
 			let dom = data.author + '-' + data.line;
-			if(data.author != 'row-' + _config.userid){
+			if(data.author != 'row-' + _config.userinfo.userid){
 				if($('.content div[key='+ data.key+']').length > 0){
 					let info = $('.content div[key='+ data.key+']');
 					if(friend.indexOf(data.author) == -1){
@@ -23,15 +23,12 @@ export class socket extends base{
 					}
 					info.addClass(data.author);
 					info.attr('style',data.style);
-					log("data.author:" + data.author + "--" + 'row-' + _config.userid);
-					info.html(data.txt);
-					//info.append('<div class="face"><img src="'+ data.userinfo.figureurl_qq_2+'" /></div>');
+					info.html('<img src="'+ data.userinfo.figureurl_qq_2+'" class="face"/>' + data.txt);
 					_is_back = false;
 				}else{
 					_is_back = true;
 					$('.content').append('<div class="'+ dom+' '+ data.author+'" key="'+ data.key +'">'+ data.txt +'</div>');
 				}
-				//$('.content div:last').input();
 			}
 		}.bind(this))
 	}

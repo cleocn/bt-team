@@ -2,8 +2,13 @@ html,body{margin:0;padding:0;background: #f0f0f0;height:100%;font-family: "å¾®è½
 header{height:50px;background: #fff;width:100%;box-shadow:2px 2px 5px #ccc;}
 footer{height:40px;line-height:40px;width:100%;margin:auto;text-align: center;display: block;background: #f0f0f0;}
 #edit-box .row-1{border-left:2px solid #ff0000;}
+.hide{display: none;}
+.animate-obj{position: absolute;top: 260px;left: 370px;color:#fff;}
+.slogan{font-size: 20px;}
+.title{font-size: 40px;top: 300px;}
+.banner-content{position: absolute;top:800px;left:350px;}
 
-div.html,div.editor{width:900px;margin:auto;height: 100%;}
+div.html,div.editor{width:900px;margin:auto;height: 100%;position: relative;}
 .html .Controls{margin:auto;width:900px;}
 .html .Controls a.btn{
 	background: none;
@@ -25,15 +30,16 @@ div.html,div.editor{width:900px;margin:auto;height: 100%;}
 	box-sizing: border-box;
 }
 .html .editor input[type="text"]{border:0;font-size: 30px;font-weight: bold;width:100%;height:50px;line-height:50px;color:#3e3e3e;border-radius: 0;outline: none;box-shadow: none;border-bottom:1px solid #e8ecf1;;padding-bottom: 15px;}
-.html .editor .content{outline: none;box-shadow: none;}
+.html .editor .content{outline: none;box-shadow: none;position: relative;}
 .html .editor .content div{position: relative;}
+.html .editor .content div img.face{width:15px;height: 15px;border-radius: 15px;position:absolute;left:-30px;}
 	div.row-2{border-left:3px solid #6699FF;padding-left:5px;}
 	div.row-1{border-left:3px solid #FF66CC;padding-left:5px;}
 
 
 /*login*/
 
-	.layer_login{width:300px;height:350px;padding:40px;moz-box-sizing: border-box;
+	.layer_login{width:300px;height:200px;padding:40px;moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		-o-box-sizing: border-box;
 		-ms-box-sizing: border-box;
@@ -51,12 +57,12 @@ div.html,div.editor{width:900px;margin:auto;height: 100%;}
 	.layer_login .layui-layer-content section{
 		margin-top:20px;
 		border-top:1px solid #ccc;
-		height:220px;
-		line-height: 220px;
+		height:70px;
 		text-align: center;
 	}
-	.layer_login .layui-layer-content section button{
-    	background-color: #41464b;
+	.login{width:200px;margin:auto;position: absolute;z-index:198910149999;top:-180px; position: relative;}
+	.login button{
+    	background-color: #0d71d4;
     	border: none;
 	    -webkit-transition: 0.2s;
 	    -moz-transition: 0.2s;
@@ -64,14 +70,21 @@ div.html,div.editor{width:900px;margin:auto;height: 100%;}
 	    height: 44px;
 	    line-height: 44px;
 	    text-align: center;
-	    width: calc(100% - 2px);
-	    border: 1px solid #41464b;
+	    width: 200px;
 	    color: #fff;
 	    border-radius: 2px;
 	    cursor: pointer;
 	    position: relative;
 	}
-	.layer_login .layui-layer-content section button a{position: absolute;top:0;left:0;width:100%;opacity:0;filter:alpha(opacity=0);-moz-opacity:0; }
+	.login button a{position: absolute;top:0px;left:0;width:100%;opacity:0;filter:alpha(opacity=0);-moz-opacity:0; cursor: pointer;}
+.navbar{width:100%;border-radius:0;margin:0;border:0;}
+		.menu{margin:auto;width:100%;}
+		.navbar-default{background: none;}
+		.user img{width:30px;height: 30px;border-radius: 20px;margin-right:5px;}
+		#edit-box .row-1{border-left:2px solid #ff0000;}
+		.dropdown-menu{min-width: 120px;}
+		.navbar-right .dropdown-menu{left:0;}
+		.dropdown-menu .divider{height: 2px;}
 
 
 	@media screen and (min-width: 1200px) {

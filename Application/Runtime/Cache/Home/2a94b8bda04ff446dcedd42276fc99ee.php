@@ -16,14 +16,7 @@
 		}
 	</script>
 	<style type="text/css">
-		.navbar{width:100%;border-radius:0;margin:0;border:0;}
-		.menu{margin:auto;width:100%;}
-		.navbar-default{background: none;}
-		.user img{width:30px;height: 30px;border-radius: 20px;margin-right:5px;}
-		#edit-box .row-1{border-left:2px solid #ff0000;}
-		.dropdown-menu{min-width: 120px;}
-		.navbar-right .dropdown-menu{left:0;}
-		.dropdown-menu .divider{height: 2px;}
+		video{width:835px;}
 	</style>
 </head>
 <body>
@@ -34,17 +27,17 @@
 			    <div class="navbar-header">
 			        <a class="navbar-brand" href="#">BT 文档</a>
 			    </div>
-			    <?php if(! empty($data['is_login'])): ?><!--向右对齐-->
-			        <ul class="nav navbar-nav navbar-right">
-			            <li class="dropdown">
-			                <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><img src="">...</a>
-			                <ul class="dropdown-menu">
-			                	<li><a></a></li>
-			                	<li class="divider"></li>
-			                    <li><a href="<?php echo U('logout');?>" class="logout">退出</a></li>
-			                </ul>
-			            </li>
-			        </ul><?php endif; ?>
+		        <!--向右对齐-->
+		        <ul class="nav navbar-nav navbar-right <?php if(empty($data['is_login'])): ?>hide<?php endif; ?>">
+		            <li class="dropdown">
+		                <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><img src="">...</a>
+		                <ul class="dropdown-menu">
+		                	<li><a></a></li>
+		                	<li class="divider"></li>
+		                    <li><a href="<?php echo U('logout');?>" class="logout">退出</a></li>
+		                </ul>
+		            </li>
+		        </ul>
 			</div>
 		</nav>
 	</div>
@@ -94,6 +87,10 @@
 			
 		</div>
 	</div>
+
+	<div class="animate-obj slogan">追求你理想的工作方式</div><div class="animate-obj title">走，去工作</div>
+	<div class="banner-content hide"><div class="login"><button>使用QQ帐号登陆<div id="login"></div></button></div>
+
 </div>
 <script type="text/javascript">
 	node = document.getElementById('edit-box');

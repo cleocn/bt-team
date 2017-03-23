@@ -23,19 +23,22 @@ export class html extends base{
 		var self = this;
 		setTimeout(()=>{
 			if(_config.userinfo == null){
+				$('.banner-content').removeClass('hide');
 				let _html = ` <header>BT文档</header><section><button>使用QQ帐号登陆<div id="login"></div></button></section>`;
-				layer.open({type: 1,title: false,closeBtn: 0,shadeClose: false,skin: 'layer_login',content: _html});
-				QC.Login({btnId:"login"});
-
+				layer.open({type: 1,title: false,closeBtn: 0,shadeClose: false,skin: 'layer_login',content: ''});
+				$('.layui-layer-page').remove();
 				_config.userinfo = {userid : 1,color : '#000'};
 				self.default(false);
+				QC.Login({btnId:"login"});
 			}
 		},500)
 		//用JS SDK调用OpenAPI
 		QC.api("get_user_info", {}).success((s)=>{
+			$('.navbar-nav').removeClass('hide');
+			$('.banner-content').addClass('hide');
+			$('.layui-layer-shade').remove();
 			this.close();
 			_config.userinfo = s.data;
-			//log(_config.userinfo);
 			$('.user img').attr('src',_config.userinfo.figureurl_qq_2);
 			let data = {url : _config.CONTROLLER_NAME + '/save',data : _config.userinfo };
 			self.ajax(data,(result)=>{
@@ -49,10 +52,10 @@ export class html extends base{
 	}
 	default(is_login){
 		// 默认内容初始化
-		let _html = '<div>品牌全案策划就是建立品牌、塑造品牌并完善品牌的一个过程，希望通过品牌全案策划的终极解决方案来完善企业品牌，使之成为行业内，市场中的一个知名 品牌，让这个品牌不仅有着极高的知名度，还具有不同凡响的美誉度，这才是做品牌全案策划的最终目的。</div><div class="row-1-4 row-1" key="873382"><br></div><div class="row-1-3 row-1" key="389376">那么接下来，先知品牌就来给大家简单的说一说2016 年终极品牌全案策划解决方案，希望能够给企业带来帮助。<br></div><div class="row-1-6 row-1" key="765449"><br></div><div class="row-1-5 row-1 content-undefined" key="999199"><b>1、前期调研</b><br>市场调研前期，我们一般分为三个步骤，第一，明确调研意图。第二，收集资料，分析问题。第三，确定市场调研主题。</div><div class="row-1-7 row-1" key="591420"><br><b>2、组织策划</b><br>先知品牌对品牌全案策划前期的组织策划提供以下思路：品牌整合策划、市场整合营销策划、企业视觉识别系统（VI）设计、产品包装设计与创意、销售终端生动 化创意与设计、影视广告的创意、平面设计广告的创意与策划、产品招商全程策划、企业销售管理体系、企业销售队伍培训等等。</div><div class="row-1-8 row-1" key="425025"><br><b>3、确立实施</b><br>品牌定位方案的确定、品牌全案设计的确定、品牌名称的确定、品牌商标的确定及注册、品牌营销方案的确定、品牌产品价格的确定、主推产品的确定、推广营销渠道的确定、品牌全案策划费用的确定、品牌推广营销的时间段的确定、品牌全案策划解决方案效果的评估预测等。<br></div><div></div><div style="text-align: right;"><img src="http://e.xianzhi.net/uploads/allimg/160616/47_160616135922_1.jpg"></div>',
-			_title = 'BT-文档 可多人实时协作的云端工具';
+		let _html = '<div>BT文档是一款支持「多人实时协作」的文档设计工具，你可以和别人一起同时进行一个文档制作，你们能够互相看到对方的状态，以及每个人的每一步操作与结果。<br></div><div>BT文档只是仿业内“石墨”的一个非常非常初级的版本，意在本人探索和偿试新产品下的技术原理实现~</div><div><br><video class="embed-responsive-item" id="fullVideo" autoplay="autoplay" controls=""><source src="https://dn-site.oss.aliyuncs.com/videos%2F60s_go_to_work.mp4?response-content-type=video/mp4" type="video/mp4"></video></div>',
+			_title = 'BT-文档 多人实时协作工具';
 		if(is_login){
-			_html = '<div>Start</div>';
+			_html = '<div>Hello World</div>';
 			_title = '无标题';
 		}
 		$('#edit-box').html(_html);

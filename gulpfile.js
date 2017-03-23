@@ -39,7 +39,6 @@ gulp.task('libs', function(){
         'Public/assets/js/lib/jquery.min.js',
         'Public/assets/js/lib/layer/layer.js',
         'Public/assets/js/lib/socket.io.js',
-        'Public/assets/js/lib/bootstrap.min.js'
         ])
         .pipe(print())
         .pipe(concat('lib.js'))
