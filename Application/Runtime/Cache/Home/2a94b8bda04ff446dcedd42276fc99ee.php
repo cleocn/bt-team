@@ -97,6 +97,6 @@
 </script>
  	<script src="/Public/assets/js/lib/require.js" data-main="/Public/build/app"></script>
 	<footer></footer>
-	<footer>&copy BT出口</footer>
+	<footer>&copy BT出品</footer>
 	</body>
 </html>
