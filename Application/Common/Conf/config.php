@@ -3,9 +3,9 @@ return array(
 	//数据库配置信息 ---------------------------------
 	'DB_TYPE'   => 'mysql', 
 	// 数据库类型
-	'DB_HOST'   => '192.168.0.104', 
+	'DB_HOST'   => 'localhost', 
 	// 服务器地址
-	'DB_NAME'   => 'test', 
+	'DB_NAME'   => 'db_im', 
 	// 数据库名
 	'DB_USER'   => 'root', 
 	// 用户名
@@ -13,6 +13,6 @@ return array(
 	// 密码
 	'DB_PORT'   => 3306, 
 	// 端口
-	'DB_PREFIX' => 'ft_',
+	'DB_PREFIX' => 'im_',
 	 // 数据库表前缀 
 );

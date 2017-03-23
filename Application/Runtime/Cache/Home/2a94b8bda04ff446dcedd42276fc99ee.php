@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<script src="/Public/build/lib.js"></script>
-	<script src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101139503" data-redirecturi="http://im.5i5s.net" charset="utf-8"></script>
+	<script src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101139503" data-callback="true" data-redirecturi="http://im.5i5s.net" charset="utf-8"></script>
 	<script type="text/javascript" src="/Public/assets/js/lib/bootstrap.min.js"></script>
 	<link type="text/css" href="/Public/build/min.css" rel="stylesheet" >
 	<script type="text/javascript">
 		var _config = {userinfo : null,CONTROLLER_NAME : '/Home/<?php echo CONTROLLER_NAME;?>',path : '/'},
 			_is_back = false,
-			node = null;
+			node = null,
+			friend = [];
 		function log(val){
 			console.log(val);
 		}
@@ -19,6 +20,10 @@
 		.menu{margin:auto;width:100%;}
 		.navbar-default{background: none;}
 		.user img{width:30px;height: 30px;border-radius: 20px;margin-right:5px;}
+		#edit-box .row-1{border-left:2px solid #ff0000;}
+		.dropdown-menu{min-width: 120px;}
+		.navbar-right .dropdown-menu{left:0;}
+		.dropdown-menu .divider{height: 2px;}
 	</style>
 </head>
 <body>
@@ -26,20 +31,20 @@
 	<div class="menu">
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid"> 
-		    <div class="navbar-header">
-		        <a class="navbar-brand" href="#">BT 文档</a>
-		    </div>
-		    <div>
-		        <!--向右对齐-->
-		        <ul class="nav navbar-nav navbar-right">
-		            <li class="dropdown">
-		                <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><img src="">...</a>
-		                <ul class="dropdown-menu">
-		                    <li><a href="javascript:;" class="logout">退出</a></li>
-		                </ul>
-		            </li>
-		        </ul>
-		    </div>
+			    <div class="navbar-header">
+			        <a class="navbar-brand" href="#">BT 文档</a>
+			    </div>
+			    <?php if(! empty($data['is_login'])): ?><!--向右对齐-->
+			        <ul class="nav navbar-nav navbar-right">
+			            <li class="dropdown">
+			                <a href="#" class="dropdown-toggle user" data-toggle="dropdown"><img src="">...</a>
+			                <ul class="dropdown-menu">
+			                	<li><a></a></li>
+			                	<li class="divider"></li>
+			                    <li><a href="<?php echo U('logout');?>" class="logout">退出</a></li>
+			                </ul>
+			            </li>
+			        </ul><?php endif; ?>
 			</div>
 		</nav>
 	</div>
