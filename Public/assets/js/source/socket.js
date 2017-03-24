@@ -15,8 +15,8 @@ export class socket extends base{
 		this._socket.on('s_listen',function(data){
 			let dom = data.author + '-' + data.line;
 			if(data.author != 'row-' + _config.userinfo.userid){
-				if($('.content div[key='+ data.key+']').length > 0){
-					let info = $('.content div[key='+ data.key+']');
+				if($('#edit-box div[key='+ data.key+']').length > 0){
+					let info = $('#edit-box div[key='+ data.key+']');
 					if(friend.indexOf(data.author) == -1){
 						self.default(data.author,data.userinfo.color);
 						friend.push(data.author);
@@ -27,7 +27,7 @@ export class socket extends base{
 					_is_back = false;
 				}else{
 					_is_back = true;
-					$('.content').append('<div class="'+ dom+' '+ data.author+'" key="'+ data.key +'">'+ data.txt +'</div>');
+					$('#edit-box').append('<div class="'+ dom+' '+ data.author+'" key="'+ data.key +'">'+ data.txt +'</div>');
 				}
 			}
 		}.bind(this))

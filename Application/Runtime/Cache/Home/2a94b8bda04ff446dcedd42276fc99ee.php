@@ -15,9 +15,6 @@
 			console.log(val);
 		}
 	</script>
-	<style type="text/css">
-		video{width:835px;}
-	</style>
 </head>
 <body>
 <header>
@@ -83,7 +80,9 @@
 	<!-- 正文 -->
 	<div class='editor'>
 		<input type="text" id="title" placeholder="无标题">
-		<div class="content" contenteditable="true" id="edit-box">
+		<div contenteditable="true" id="edit-box">
+			
+		</div>
 	</div>
 
 	<div class="animate-obj slogan">追求你理想的工作方式</div><div class="animate-obj title">走，去工作</div>

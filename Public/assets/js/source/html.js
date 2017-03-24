@@ -25,7 +25,7 @@ export class html extends base{
 			if(_config.userinfo == null){
 				$('.banner-content').removeClass('hide');
 				let _html = ` <header>BT文档</header><section><button>使用QQ帐号登陆<div id="login"></div></button></section>`;
-				layer.open({shade: [0.5, '#fff'],type: 1,title: false,closeBtn: 0,shadeClose: false,skin: 'layer_login',content: ''});
+				layer.open({shade: [0.5, '#999'],type: 1,title: false,closeBtn: 0,shadeClose: false,skin: 'layer_login',content: ''});
 				$('.layui-layer-page').remove();
 				_config.userinfo = {userid : 1,color : '#000'};
 				self.default(false);
