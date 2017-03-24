@@ -7,12 +7,10 @@ console.log('listen 3003 init');
 
 io.sockets.on('connection', function (socket) {
     socket.on('start', function (data) {
-	    console.log(data);
 	    io.sockets.emit('start_list',data);
     });
 
     socket.on('c_emit', function (data) {
-        console.log(data);
         io.sockets.emit('s_listen',data);
     });
 });
